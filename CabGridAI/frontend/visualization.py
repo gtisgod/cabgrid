@@ -98,6 +98,11 @@ class MapVisualizer:
                 y = cab.current_y if cab.current_y is not None else self.pos[cab.current_node][1]
                 
                 self.ax.plot(x, y, marker='s', color=color, markersize=10, markeredgecolor='white', markeredgewidth=1.5)
+                
+                # Show cab status text on map (hide for IDLE to reduce clutter, or show briefly)
+                if cab.state != CabState.IDLE:
+                    self.ax.text(x, y - 20, f"{cab.cab_id} - {cab.state}", color=color, fontsize=8, fontweight='bold', ha='center',
+                                bbox=dict(facecolor='#111111', alpha=0.8, edgecolor='none', pad=1))
 
         self.ax.set_xticks([])
         self.ax.set_yticks([])

@@ -28,11 +28,13 @@ class SimulationEngine:
         cab.transition_state(CabState.DISPATCHED, ProcessState.NEW)
         BenchmarkPanel.log_process_state_transition(cab.cab_id, old_state, CabState.DISPATCHED, old_process, ProcessState.NEW)
         
-        time.sleep(0.5) # Simulate dispatch delay
-        
-        old_state, old_process = cab.state, cab.process_state
-        cab.transition_state(CabState.EN_ROUTE, ProcessState.RUNNING)
-        BenchmarkPanel.log_process_state_transition(cab.cab_id, old_state, CabState.EN_ROUTE, old_process, ProcessState.RUNNING)
+        def delay_dispatch():
+            time.sleep(0.5) # Simulate dispatch delay
+            old_state2, old_process2 = cab.state, cab.process_state
+            cab.transition_state(CabState.EN_ROUTE, ProcessState.RUNNING)
+            BenchmarkPanel.log_process_state_transition(cab.cab_id, old_state2, CabState.EN_ROUTE, old_process2, ProcessState.RUNNING)
+            
+        threading.Thread(target=delay_dispatch, daemon=True).start()
 
     def _loop(self):
         pos = self.graph.get_pos()

@@ -38,6 +38,11 @@ class CabGridApp:
         self.selected_route_key = None
         
         self._setup_ui()
+
+        self.active_cab = None
+        self.cab_ride_state_var = tk.StringVar(self.root)
+        self.cab_process_state_var = tk.StringVar(self.root)
+        self.cab_location_var = tk.StringVar(self.root)
         
         # Connect simulation callback (thread-safe UI update)
         self.simulation.start(update_callback=self._queue_map_update)
@@ -170,15 +175,58 @@ class CabGridApp:
             btn.pack(side="right", padx=5)
 
     def _book_cab(self, cab, route_path):
-        messagebox.showinfo("Cab Booked", f"Successfully booked {cab.cab_id}!\nCheck terminal for process state logs.")
+        messagebox.showinfo("Cab Booked", f"Successfully booked {cab.cab_id}!\nWatch the live status below.")
         self.visualizer.set_route(route_path)
-        self.simulation.dispatch_cab(cab, route_path)
         
         for widget in self.cabs_frame.winfo_children():
             widget.destroy()
             
+        self.active_cab = cab
+        
+        ttk.Label(self.cabs_frame, text="Current Trip Status", font=("Segoe UI", 14, "bold"), foreground="#e94560").pack(anchor="w", pady=(10, 5))
+        
+        status_container = tk.Frame(self.cabs_frame, bg="#0f3460", bd=0, pady=15, padx=15)
+        status_container.pack(fill="x", pady=5)
+        
+        # Header: Cab ID and Type
+        tk.Label(status_container, text=f"🚕 {cab.cab_id} • {cab.cab_type}", bg="#0f3460", fg="white", font=("Segoe UI", 13, "bold"), anchor="w").pack(fill="x", pady=(0, 10))
+        
+        # Status rows
+        row1 = tk.Frame(status_container, bg="#0f3460")
+        row1.pack(fill="x", pady=2)
+        tk.Label(row1, textvariable=self.cab_ride_state_var, bg="#0f3460", fg="#f1c40f", font=("Segoe UI", 11, "bold"), anchor="w").pack(side="left")
+        
+        row2 = tk.Frame(status_container, bg="#0f3460")
+        row2.pack(fill="x", pady=2)
+        tk.Label(row2, textvariable=self.cab_process_state_var, bg="#0f3460", fg="#3498db", font=("Segoe UI", 10), anchor="w").pack(side="left")
+        
+        row3 = tk.Frame(status_container, bg="#0f3460")
+        row3.pack(fill="x", pady=(10, 0))
+        tk.Label(row3, text="📍", bg="#0f3460", fg="#e94560", font=("Segoe UI", 12)).pack(side="left")
+        tk.Label(row3, textvariable=self.cab_location_var, bg="#0f3460", fg="#2ecc71", font=("Segoe UI", 11, "bold"), anchor="w").pack(side="left", padx=5)
+
+        self._update_status_ui()
+        self.simulation.dispatch_cab(cab, route_path)
+            
     def _queue_map_update(self):
         try:
             self.root.after(0, self.visualizer.draw_map)
+            self.root.after(0, self._update_status_ui)
         except:
             pass
+
+    def _update_status_ui(self):
+        if getattr(self, 'active_cab', None):
+            state = self.active_cab.state
+            if state == "COMPLETED":
+                self.cab_ride_state_var.set("COMPLETED ✅")
+                self.cab_process_state_var.set("System: TERMINATED")
+            else:
+                self.cab_ride_state_var.set(f"Status: {state}")
+                self.cab_process_state_var.set(f"System: {self.active_cab.process_state}")
+                
+            current_node = self.active_cab.current_node
+            node_names = {v: k for k, v in self.city_graph.locations.items()}
+            location_name = node_names.get(current_node, f"Intersection {current_node}")
+            
+            self.cab_location_var.set(location_name)
