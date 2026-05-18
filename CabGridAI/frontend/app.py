@@ -134,10 +134,12 @@ class CabGridApp:
 
     def _select_route(self, route_name, route_data):
         self.selected_route_key = route_name
-        self.visualizer.set_route(route_data['path'])
+        
+        pickup_node = route_data['path'][0]
+        destination_node = route_data['path'][-1]
+        self.visualizer.set_route(route_data['path'], pickup_node, destination_node)
         
         # Trigger Cab Search (Benchmark BFS vs Brute Force)
-        pickup_node = route_data['path'][0]
         
         bfs_cabs, bfs_nodes, bfs_time = self.dispatch_engine.find_nearest_cabs_bfs(pickup_node, k=3)
         bf_cabs, bf_nodes, bf_time = self.dispatch_engine.find_nearest_cabs_brute_force(pickup_node, k=3)
@@ -176,7 +178,23 @@ class CabGridApp:
 
     def _book_cab(self, cab, route_path):
         messagebox.showinfo("Cab Booked", f"Successfully booked {cab.cab_id}!\nWatch the live status below.")
-        self.visualizer.set_route(route_path)
+        
+        pickup_node = route_path[0]
+        destination_node = route_path[-1]
+        self.active_pickup_node = pickup_node
+        self.pickup_done = False
+        
+        if cab.current_node != pickup_node:
+            route_to_pickup = self.routing_engine.get_fastest_route(cab.current_node, pickup_node)
+            if route_to_pickup and route_to_pickup['path']:
+                # route_to_pickup['path'] ends with pickup_node. route_path starts with pickup_node.
+                full_route = route_to_pickup['path'][:-1] + route_path
+            else:
+                full_route = route_path
+        else:
+            full_route = route_path
+            
+        self.visualizer.set_route(full_route, pickup_node, destination_node)
         
         for widget in self.cabs_frame.winfo_children():
             widget.destroy()
@@ -206,7 +224,7 @@ class CabGridApp:
         tk.Label(row3, textvariable=self.cab_location_var, bg="#0f3460", fg="#2ecc71", font=("Segoe UI", 11, "bold"), anchor="w").pack(side="left", padx=5)
 
         self._update_status_ui()
-        self.simulation.dispatch_cab(cab, route_path)
+        self.simulation.dispatch_cab(cab, full_route)
             
     def _queue_map_update(self):
         try:
@@ -218,14 +236,38 @@ class CabGridApp:
     def _update_status_ui(self):
         if getattr(self, 'active_cab', None):
             state = self.active_cab.state
+            current_node = self.active_cab.current_node
+            
             if state == "COMPLETED":
                 self.cab_ride_state_var.set("COMPLETED ✅")
                 self.cab_process_state_var.set("System: TERMINATED")
-            else:
+            elif state == "IDLE":
                 self.cab_ride_state_var.set(f"Status: {state}")
                 self.cab_process_state_var.set(f"System: {self.active_cab.process_state}")
+            else:
+                pickup_node = getattr(self, 'active_pickup_node', None)
+                if pickup_node is not None:
+                    if not getattr(self, 'pickup_done', False):
+                        if current_node == pickup_node:
+                            self.pickup_done = True
+                            self.cab_ride_state_var.set("PICKUP DONE ✅")
+                        else:
+                            route_to_pickup = self.routing_engine.get_fastest_route(current_node, pickup_node)
+                            if route_to_pickup:
+                                eta = route_to_pickup['eta']
+                                self.cab_ride_state_var.set(f"Arriving in: {eta:.1f} mins")
+                            else:
+                                self.cab_ride_state_var.set(f"Status: {state}")
+                    else:
+                        if current_node == pickup_node:
+                            self.cab_ride_state_var.set("PICKUP DONE ✅")
+                        else:
+                            self.cab_ride_state_var.set("Heading to Destination 🚕")
+                else:
+                    self.cab_ride_state_var.set(f"Status: {state}")
+                    
+                self.cab_process_state_var.set(f"System: {self.active_cab.process_state}")
                 
-            current_node = self.active_cab.current_node
             node_names = {v: k for k, v in self.city_graph.locations.items()}
             location_name = node_names.get(current_node, f"Intersection {current_node}")
             
