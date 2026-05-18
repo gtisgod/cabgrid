@@ -1,100 +1,109 @@
 import networkx as nx
-import osmnx as ox
 import random
+import json
 import os
+import math
 
 class CityGraph:
-    def __init__(self):
-        self.graph = None
-        self.data_path = os.path.join(os.path.dirname(__file__), "..", "data", "bangalore_graph.graphml")
+    def __init__(self, cols=12, rows=8):
+        self.graph = nx.Graph()
+        self.cols = cols
+        self.rows = rows
+        self.data_path = os.path.join(os.path.dirname(__file__), "..", "data", "city_graph.json")
+        self.image_width = 800
+        self.image_height = 600
+        
+        # We will manually map predefined locations to nodes later
         self.locations = {
-            "MG Road": (12.9716, 77.5946),
-            "Cubbon Park": (12.9764, 77.5929),
-            "Lalbagh": (12.9507, 77.5848),
-            "UB City": (12.9719, 77.5961),
-            "Brigade Road": (12.9738, 77.6067),
-            "Indiranagar": (12.9784, 77.6408),
-            "Koramangala": (12.9279, 77.6271),
-            "Majestic (KSR)": (12.9781, 77.5695),
-            "Vidhana Soudha": (12.9796, 77.5906)
+            "MG Road": 40,
+            "Cubbon Park": 42,
+            "Lalbagh": 85,
+            "UB City": 55,
+            "Brigade Road": 46,
+            "Indiranagar": 10,
+            "Koramangala": 89,
+            "Majestic (KSR)": 36,
+            "Vidhana Soudha": 38
         }
-        self.location_nodes = {}
+        self.location_nodes = self.locations
 
     def generate_city(self):
-        """Downloads Bangalore map around a center point (MG Road)"""
-        center_point = self.locations["MG Road"]
-        # Download a 3.5km radius to keep it fast but expansive enough
-        print("Downloading Bangalore map from OpenStreetMap (this may take a minute)...")
-        # Ensure we use drive network
-        self.graph = ox.graph_from_point(center_point, dist=3500, network_type='drive')
-        
-        # Convert to undirected graph for easier bidirectional routing for cabs
-        self.graph = ox.convert.to_undirected(self.graph)
+        """Generates a grid-based city graph that overlays on our background image."""
+        self.graph = nx.grid_2d_graph(self.cols, self.rows)
 
-        self._assign_custom_attributes()
+        # Relabel nodes from (x, y) to integer IDs
+        mapping = {node: i for i, node in enumerate(self.graph.nodes())}
+        pos_mapping = {mapping[node]: node for node in self.graph.nodes()}
         
-    def _assign_custom_attributes(self):
-        # Assign attributes to edges
-        # We must use G.edges since it's an undirected graph which is essentially a MultiGraph in OSMnx context sometimes,
-        # but utils_graph.get_undirected returns a standard Graph or MultiGraph depending on parallel edges.
-        # OSMnx graphs are MultiDiGraphs by default, and get_undirected returns a MultiGraph.
-        for u, v, k, data in self.graph.edges(keys=True, data=True):
-            # 'length' is in meters, provided by OSMnx
-            length = data.get('length', 100) 
-            # Make sure length is numerical, sometimes lists can sneak in if simplified
-            if isinstance(length, list): length = length[0]
-            try:
-                dist_km = float(length) / 1000.0
-            except:
-                dist_km = 0.1
+        self.graph = nx.relabel_nodes(self.graph, mapping)
+        
+        # Add (x, y) coordinates mapped to pixel space (approx 800x600)
+        margin_x = 50
+        margin_y = 50
+        step_x = (self.image_width - 2 * margin_x) / (self.cols - 1)
+        step_y = (self.image_height - 2 * margin_y) / (self.rows - 1)
+        
+        for node in self.graph.nodes():
+            grid_x, grid_y = pos_mapping[node]
+            pixel_x = margin_x + grid_x * step_x
+            pixel_y = margin_y + grid_y * step_y
+            # Jitter slightly for organic look
+            pixel_x += random.uniform(-15, 15)
+            pixel_y += random.uniform(-15, 15)
+            self.graph.nodes[node]['pos'] = (pixel_x, pixel_y)
+
+        # Randomly remove some edges to create a more realistic map
+        edges_to_remove = random.sample(list(self.graph.edges()), k=int(len(self.graph.edges()) * 0.2))
+        self.graph.remove_edges_from(edges_to_remove)
+
+        # Ensure our landmark nodes aren't isolated
+        isolated = list(nx.isolates(self.graph))
+        for iso in isolated:
+            if iso not in self.locations.values():
+                self.graph.remove_node(iso)
+            else:
+                # reconnect it
+                neighbors = [n for n in self.graph.nodes() if n != iso]
+                closest = min(neighbors, key=lambda n: math.dist(self.graph.nodes[iso]['pos'], self.graph.nodes[n]['pos']))
+                self.graph.add_edge(iso, closest)
+
+        # Assign attributes
+        for u, v in self.graph.edges():
+            pos_u = self.graph.nodes[u]['pos']
+            pos_v = self.graph.nodes[v]['pos']
+            # Pixel distance
+            dist = math.dist(pos_u, pos_v)
+            dist_km = round(dist / 100.0, 2) # Arbitrary scale
             
-            # Traffic multiplier: 1.0 (low), 1.5 (medium), 2.5 (heavy)
             traffic = random.choice([1.0, 1.2, 1.5, 2.0, 2.5])
-            
-            # Speed limit in km/h - infer from OSM or fallback
-            speed_limit = 40
-            if 'maxspeed' in data:
-                ms = data['maxspeed']
-                if isinstance(ms, list): ms = ms[0]
-                try: speed_limit = int(ms)
-                except: pass
-                
-            # Fuel cost (simplified metric)
+            speed_limit = random.choice([30, 45, 60])
             fuel_cost = round(dist_km * random.uniform(0.5, 1.5), 2)
 
-            self.graph[u][v][k].update({
-                'distance': round(dist_km, 3),
+            self.graph[u][v].update({
+                'distance': dist_km,
                 'traffic': traffic,
                 'speed_limit': speed_limit,
                 'fuel_cost': fuel_cost
             })
-            
-    def map_locations_to_nodes(self):
-        """Find nearest graph node for each predefined location"""
-        print("Mapping predefined locations to graph nodes...")
-        for name, (lat, lng) in self.locations.items():
-            # osmnx expects (G, X, Y) where X is longitude and Y is latitude
-            node = ox.nearest_nodes(self.graph, X=lng, Y=lat)
-            self.location_nodes[name] = node
 
     def save_graph(self):
-        """Saves the graph to a GraphML file."""
         os.makedirs(os.path.dirname(self.data_path), exist_ok=True)
-        ox.save_graphml(self.graph, filepath=self.data_path)
+        data = nx.node_link_data(self.graph)
+        with open(self.data_path, 'w') as f:
+            json.dump(data, f, indent=4)
 
     def load_graph(self):
-        """Loads the graph from a file if it exists, else generates a new one."""
         if os.path.exists(self.data_path):
-            print("Loading cached Bangalore map...")
-            self.graph = ox.load_graphml(self.data_path)
-            # Ensure we re-assign custom attributes because GraphML serialization
-            # might not perfectly preserve all our custom float types (and traffic should be random each run)
-            self._assign_custom_attributes()
+            with open(self.data_path, 'r') as f:
+                data = json.load(f)
+            self.graph = nx.node_link_graph(data)
+            for node in self.graph.nodes():
+                pos = self.graph.nodes[node]['pos']
+                if isinstance(pos, list):
+                    self.graph.nodes[node]['pos'] = tuple(pos)
         else:
             self.generate_city()
             self.save_graph()
-            
-        self.map_locations_to_nodes()
             
     def get_nodes(self):
         return list(self.graph.nodes())
@@ -103,5 +112,4 @@ class CityGraph:
         return self.graph.edges(data=True)
 
     def get_pos(self):
-        # Extract x, y attributes from nodes (OSMnx stores them as 'x' and 'y')
-        return {node: (float(data['x']), float(data['y'])) for node, data in self.graph.nodes(data=True)}
+        return nx.get_node_attributes(self.graph, 'pos')

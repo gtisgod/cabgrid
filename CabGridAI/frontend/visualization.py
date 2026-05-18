@@ -2,6 +2,8 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from PIL import Image
+import os
 from backend.cab_manager import CabState
 
 class MapVisualizer:
@@ -9,13 +11,19 @@ class MapVisualizer:
         self.graph = city_graph.graph
         self.pos = city_graph.get_pos()
         self.cab_manager = cab_manager
-        self.city_graph = city_graph # Ref to access locations
+        self.city_graph = city_graph
+        
+        # Load Background Image
+        img_path = os.path.join(os.path.dirname(__file__), '..', 'assets', 'city_map_bg.png')
+        self.bg_img = None
+        if os.path.exists(img_path):
+            self.bg_img = Image.open(img_path)
         
         # Setup Figure
         self.fig = Figure(figsize=(8, 6), facecolor='#111111')
         self.ax = self.fig.add_subplot(111)
         self.ax.set_facecolor('#111111')
-        self.fig.subplots_adjust(left=0.01, right=0.99, bottom=0.01, top=0.99)
+        self.fig.subplots_adjust(left=0, right=1, bottom=0, top=1)
         
         # Setup Canvas
         self.canvas = FigureCanvasTkAgg(self.fig, master=parent_frame)
@@ -31,38 +39,47 @@ class MapVisualizer:
     def draw_map(self):
         self.ax.clear()
         
-        # Draw background roads (dark gray/blue)
-        # OSMnx graphs are dense, use thin lines
+        # Draw Background Image
+        if self.bg_img is not None:
+            self.ax.imshow(self.bg_img, extent=[0, 800, 600, 0])
+        
+        # Draw background roads (subtle overlay)
         nx.draw_networkx_edges(
             self.graph, self.pos, ax=self.ax,
-            edge_color='#2c3e50', width=0.5, alpha=0.3
+            edge_color='#2c3e50', width=2.0, alpha=0.4
         )
         
         # Draw traffic on edges
-        heavy_traffic = [(u, v) for u, v, k, d in self.graph.edges(keys=True, data=True) if d.get('traffic', 1) >= 2.0]
-        med_traffic = [(u, v) for u, v, k, d in self.graph.edges(keys=True, data=True) if 1.5 <= d.get('traffic', 1) < 2.0]
+        heavy_traffic = [(u, v) for u, v, d in self.graph.edges(data=True) if d['traffic'] >= 2.0]
+        med_traffic = [(u, v) for u, v, d in self.graph.edges(data=True) if 1.5 <= d['traffic'] < 2.0]
         
-        nx.draw_networkx_edges(self.graph, self.pos, ax=self.ax, edgelist=med_traffic, edge_color='#f39c12', width=1.0, alpha=0.5)
-        nx.draw_networkx_edges(self.graph, self.pos, ax=self.ax, edgelist=heavy_traffic, edge_color='#e74c3c', width=1.5, alpha=0.6)
+        nx.draw_networkx_edges(self.graph, self.pos, ax=self.ax, edgelist=med_traffic, edge_color='#f39c12', width=2, alpha=0.5)
+        nx.draw_networkx_edges(self.graph, self.pos, ax=self.ax, edgelist=heavy_traffic, edge_color='#e74c3c', width=3, alpha=0.6)
 
         # Draw selected route
         if self.selected_route:
             route_edges = list(zip(self.selected_route, self.selected_route[1:]))
             nx.draw_networkx_edges(
                 self.graph, self.pos, ax=self.ax, edgelist=route_edges,
-                edge_color='#00ffcc', width=4, alpha=1.0
+                edge_color='#00ffcc', width=5, alpha=0.9
             )
 
-        # Draw Pre-defined Landmarks
+        # Draw Landmark Nodes
         landmark_nodes = list(self.city_graph.location_nodes.values())
-        nx.draw_networkx_nodes(self.graph, self.pos, nodelist=landmark_nodes, ax=self.ax, node_size=60, node_color='#e74c3c')
+        # Filter out if node was removed randomly
+        landmark_nodes = [n for n in landmark_nodes if n in self.pos]
+        
+        nx.draw_networkx_nodes(self.graph, self.pos, nodelist=landmark_nodes, ax=self.ax, node_size=100, node_color='#e74c3c')
         
         # Draw Labels for Landmarks
-        labels = {node: name for name, node in self.city_graph.location_nodes.items()}
-        nx.draw_networkx_labels(
-            self.graph, self.pos, labels=labels, ax=self.ax,
-            font_size=10, font_color='#ffffff', font_weight='bold', verticalalignment='bottom'
-        )
+        labels = {node: name for name, node in self.city_graph.locations.items()}
+        
+        # Text annotations
+        for node, label in labels.items():
+            if node in self.pos:
+                x, y = self.pos[node]
+                self.ax.text(x, y - 15, label, color='white', fontsize=10, fontweight='bold', ha='center',
+                            bbox=dict(facecolor='#16213e', alpha=0.7, edgecolor='none', pad=2))
 
         # Draw Cabs
         for cab in self.cab_manager.get_all_cabs():
@@ -75,18 +92,17 @@ class MapVisualizer:
             else:
                 color = '#9b59b6' # Purple
                 
-            x = cab.current_x if cab.current_x is not None else self.pos[cab.current_node][0]
-            y = cab.current_y if cab.current_y is not None else self.pos[cab.current_node][1]
-            
-            self.ax.plot(x, y, marker='s', color=color, markersize=8, markeredgecolor='white')
-            # Don't clutter UI with cab IDs if they are far away, just the colored marker
-            # self.ax.text(x, y + 0.0005, cab.cab_id[-3:], color='white', fontsize=7, ha='center')
+            # Fallback for cab movement
+            if cab.current_node in self.pos:
+                x = cab.current_x if cab.current_x is not None else self.pos[cab.current_node][0]
+                y = cab.current_y if cab.current_y is not None else self.pos[cab.current_node][1]
+                
+                self.ax.plot(x, y, marker='s', color=color, markersize=10, markeredgecolor='white', markeredgewidth=1.5)
 
         self.ax.set_xticks([])
         self.ax.set_yticks([])
+        self.ax.set_xlim(0, 800)
+        self.ax.set_ylim(600, 0) # Inverted for typical image coordinates
         self.ax.set_facecolor('#111111')
-        
-        # Proper scaling for lat/lon maps
-        self.ax.set_aspect('equal')
         
         self.canvas.draw()

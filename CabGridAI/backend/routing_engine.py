@@ -7,12 +7,11 @@ class RoutingEngine:
 
     def _calculate_travel_time(self, u, v, data):
         """Helper to calculate travel time based on distance, speed limit, and traffic."""
-        dist = data.get('distance', 0.1)
-        speed = data.get('speed_limit', 40)
-        traffic = data.get('traffic', 1.0)
-        
-        base_time = dist / speed
-        return (base_time * traffic) * 60
+        # time in hours
+        base_time = data['distance'] / data['speed_limit']
+        # multiply by traffic factor (1.0 to 2.5)
+        # convert to minutes for better readability
+        return (base_time * data['traffic']) * 60
 
     def _dijkstra_path(self, source, target, weight_func):
         """Runs NetworkX Dijkstra with a custom weight function."""
@@ -27,23 +26,10 @@ class RoutingEngine:
             for i in range(len(path) - 1):
                 u = path[i]
                 v = path[i+1]
-                
-                # Handle MultiGraph (dictionary of parallel edges)
-                edge_dict = self.graph[u][v]
-                # Find the parallel edge that minimizes the specific weight_func
-                best_data = None
-                best_weight = float('inf')
-                
-                for key, data in edge_dict.items():
-                    w = weight_func(u, v, data)
-                    if w < best_weight:
-                        best_weight = w
-                        best_data = data
-                
-                if best_data:
-                    total_distance += best_data.get('distance', 0)
-                    total_time += self._calculate_travel_time(u, v, best_data)
-                    total_fuel += best_data.get('fuel_cost', 0)
+                edge_data = self.graph[u][v]
+                total_distance += edge_data['distance']
+                total_time += self._calculate_travel_time(u, v, edge_data)
+                total_fuel += edge_data['fuel_cost']
                 
             return {
                 'path': path,
@@ -55,21 +41,29 @@ class RoutingEngine:
             return None
 
     def get_shortest_route(self, source, target):
-        def weight(u, v, data): return data.get('distance', 0.1)
+        """Minimizes pure distance."""
+        def weight(u, v, data):
+            return data['distance']
         return self._dijkstra_path(source, target, weight)
 
     def get_fastest_route(self, source, target):
-        def weight(u, v, data): return self._calculate_travel_time(u, v, data)
+        """Minimizes travel time."""
+        def weight(u, v, data):
+            return self._calculate_travel_time(u, v, data)
         return self._dijkstra_path(source, target, weight)
 
     def get_eco_route(self, source, target):
-        def weight(u, v, data): return data.get('fuel_cost', 1.0)
+        """Minimizes fuel cost."""
+        def weight(u, v, data):
+            return data['fuel_cost']
         return self._dijkstra_path(source, target, weight)
 
     def get_optimal_route(self, source, target):
+        """Balances distance, time, and fuel."""
         def weight(u, v, data):
             time = self._calculate_travel_time(u, v, data)
-            return (data.get('distance', 0.1) * 0.3) + (time * 0.5) + (data.get('fuel_cost', 1.0) * 0.2)
+            # Normalize and blend
+            return (data['distance'] * 0.3) + (time * 0.5) + (data['fuel_cost'] * 0.2)
         return self._dijkstra_path(source, target, weight)
 
     def get_all_routes(self, source, target):

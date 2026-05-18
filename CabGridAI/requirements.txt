@@ -1,8 +1,4 @@
 networkx
 matplotlib
 rich
-osmnx
-geopy
-scikit-learn
-geopandas
-shapely
+Pillow

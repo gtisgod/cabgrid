@@ -5,1851 +5,1779 @@
     "nodes": [
         {
             "pos": [
-                0,
-                0
+                42.2962358688969,
+                64.98755619966877
             ],
             "id": 0
         },
         {
             "pos": [
-                0,
-                1
+                64.02542737374986,
+                122.62348792863722
             ],
             "id": 1
         },
         {
             "pos": [
-                0,
-                2
+                60.95176745817993,
+                206.67619695396604
             ],
             "id": 2
         },
         {
             "pos": [
-                0,
-                3
+                55.88040952029478,
+                274.435146016188
             ],
             "id": 3
         },
         {
             "pos": [
-                0,
-                4
+                63.0816474466601,
+                329.540307058418
             ],
             "id": 4
         },
         {
             "pos": [
-                0,
-                5
+                64.153606669862,
+                398.22953857924915
             ],
             "id": 5
         },
         {
             "pos": [
-                0,
-                6
+                49.49499212856808,
+                473.50567503067225
             ],
             "id": 6
         },
         {
             "pos": [
-                0,
-                7
+                64.52949301315252,
+                535.8217333912178
             ],
             "id": 7
         },
         {
             "pos": [
-                1,
-                0
+                99.96997538320133,
+                51.88600053519322
             ],
             "id": 8
         },
         {
             "pos": [
-                1,
-                1
+                99.05767853387462,
+                107.02658846979122
             ],
             "id": 9
         },
         {
             "pos": [
-                1,
-                2
+                121.80620233133288,
+                202.0840143510901
             ],
             "id": 10
         },
         {
             "pos": [
-                1,
-                3
+                111.79167969950078,
+                253.64478021007426
             ],
             "id": 11
         },
         {
             "pos": [
-                1,
-                4
+                113.96248830099098,
+                325.8263288729149
             ],
             "id": 12
         },
         {
             "pos": [
-                1,
-                5
+                99.04925509414217,
+                403.712794762773
             ],
             "id": 13
         },
         {
             "pos": [
-                1,
-                6
+                110.7519092208505,
+                486.8197294080735
             ],
             "id": 14
         },
         {
             "pos": [
-                1,
-                7
+                105.46721812978824,
+                537.0729780843338
             ],
             "id": 15
         },
         {
             "pos": [
-                2,
-                0
+                192.24835723989077,
+                43.48131129737145
             ],
             "id": 16
         },
         {
             "pos": [
-                2,
-                1
+                176.9656933230074,
+                114.73983150106395
             ],
             "id": 17
         },
         {
             "pos": [
-                2,
-                2
+                172.1588807142959,
+                182.60352903659393
             ],
             "id": 18
         },
         {
             "pos": [
-                2,
-                3
+                177.94655629146138,
+                275.54750301219383
             ],
             "id": 19
         },
         {
             "pos": [
-                2,
-                4
+                184.17005591536469,
+                338.8336445898956
             ],
             "id": 20
         },
         {
             "pos": [
-                2,
-                5
+                172.82523243857392,
+                393.68559051296893
             ],
             "id": 21
         },
         {
             "pos": [
-                2,
-                6
+                168.52793408760937,
+                488.83553226149775
             ],
             "id": 22
         },
         {
             "pos": [
-                2,
-                7
+                179.68041549237952,
+                542.525759377141
             ],
             "id": 23
         },
         {
             "pos": [
-                3,
-                0
+                232.72329847532146,
+                61.244374465282704
             ],
             "id": 24
         },
         {
             "pos": [
-                3,
-                1
+                244.33471482674767,
+                111.5521781253912
             ],
             "id": 25
         },
         {
             "pos": [
-                3,
-                2
+                244.967074754434,
+                185.33516150906578
             ],
             "id": 26
         },
         {
             "pos": [
-                3,
-                3
+                237.49272443985782,
+                271.8456662814487
             ],
             "id": 27
         },
         {
             "pos": [
-                3,
-                4
+                254.36137335816264,
+                331.1371818174102
             ],
             "id": 28
         },
         {
             "pos": [
-                3,
-                5
+                249.56405995574565,
+                394.2371135539174
             ],
             "id": 29
         },
         {
             "pos": [
-                3,
-                6
+                242.34032689882693,
+                468.91334449715833
             ],
             "id": 30
         },
         {
             "pos": [
-                3,
-                7
+                249.40067053271002,
+                560.0886742202117
             ],
             "id": 31
         },
         {
             "pos": [
-                4,
-                0
+                298.4822566089548,
+                50.289815436133864
             ],
             "id": 32
         },
         {
             "pos": [
-                4,
-                1
+                303.45093907226135,
+                124.86562872875544
             ],
             "id": 33
         },
         {
             "pos": [
-                4,
-                2
+                311.15730853969853,
+                185.1331256793297
             ],
             "id": 34
         },
         {
             "pos": [
-                4,
-                3
+                304.97143609010027,
+                258.16440794149986
             ],
             "id": 35
         },
         {
             "pos": [
-                4,
-                4
+                315.8925260468292,
+                321.7018618395897
             ],
             "id": 36
         },
         {
             "pos": [
-                4,
-                5
+                312.2187518983443,
+                417.9788552208426
             ],
             "id": 37
         },
         {
             "pos": [
-                4,
-                6
+                289.76281938023345,
+                468.1058793827847
             ],
             "id": 38
         },
         {
             "pos": [
-                4,
-                7
+                317.190451472097,
+                547.9615192041599
             ],
             "id": 39
         },
         {
             "pos": [
-                5,
-                0
+                377.077460467954,
+                60.21472817938757
             ],
             "id": 40
         },
         {
             "pos": [
-                5,
-                1
+                381.06497164373013,
+                118.15342529506322
             ],
             "id": 41
         },
         {
             "pos": [
-                5,
-                2
+                376.7698559935749,
+                179.92095454049448
             ],
             "id": 42
         },
         {
             "pos": [
-                5,
-                3
+                378.55286362675895,
+                255.3826827209276
             ],
             "id": 43
         },
         {
             "pos": [
-                5,
-                4
+                382.7812448252205,
+                346.62082686152945
             ],
             "id": 44
         },
         {
             "pos": [
-                5,
-                5
+                376.92867252621505,
+                414.76029602005525
             ],
             "id": 45
         },
         {
             "pos": [
-                5,
-                6
+                367.1124770753108,
+                484.12209989654036
             ],
             "id": 46
         },
         {
             "pos": [
-                5,
-                7
+                375.41383619554557,
+                554.0146045043484
             ],
             "id": 47
         },
         {
             "pos": [
-                6,
-                0
+                441.2514865448528,
+                61.178068588659514
             ],
             "id": 48
         },
         {
             "pos": [
-                6,
-                1
+                422.6113382818798,
+                133.38445289653248
             ],
             "id": 49
         },
         {
             "pos": [
-                6,
-                2
+                446.6319353638903,
+                200.8783223107057
             ],
             "id": 50
         },
         {
             "pos": [
-                6,
-                3
+                442.470456039891,
+                276.30041916879185
             ],
             "id": 51
         },
         {
             "pos": [
-                6,
-                4
+                421.17897927559284,
+                324.7474166053441
             ],
             "id": 52
         },
         {
             "pos": [
-                6,
-                5
+                426.841632417841,
+                396.77141232946354
             ],
             "id": 53
         },
         {
             "pos": [
-                6,
-                6
+                446.5674083619473,
+                482.2863911035444
             ],
             "id": 54
         },
         {
             "pos": [
-                6,
-                7
+                432.67483037583634,
+                558.6077772703966
             ],
             "id": 55
         },
         {
             "pos": [
-                7,
-                0
+                502.94313234503227,
+                35.175017628979624
             ],
             "id": 56
         },
         {
             "pos": [
-                7,
-                1
+                492.45393594175874,
+                118.87037198681391
             ],
             "id": 57
         },
         {
             "pos": [
-                7,
-                2
+                486.6689297233231,
+                178.02238523993714
             ],
             "id": 58
         },
         {
             "pos": [
-                7,
-                3
+                504.3376595182629,
+                256.94806904223697
             ],
             "id": 59
         },
         {
             "pos": [
-                7,
-                4
+                481.1650117251264,
+                324.9448743739594
             ],
             "id": 60
         },
         {
             "pos": [
-                7,
-                5
+                505.7389528520118,
+                411.34181270497584
             ],
             "id": 61
         },
         {
             "pos": [
-                7,
-                6
+                506.15275885357596,
+                492.8414088016032
             ],
             "id": 62
         },
         {
             "pos": [
-                7,
-                7
+                500.4219441386162,
+                535.2932269957356
             ],
             "id": 63
         },
         {
             "pos": [
-                8,
-                0
+                560.054079461858,
+                53.28127822467498
             ],
             "id": 64
         },
         {
             "pos": [
-                8,
-                1
+                560.1843785609209,
+                111.732856657278
             ],
             "id": 65
         },
         {
             "pos": [
-                8,
-                2
+                573.4893137224625,
+                189.1636598097149
             ],
             "id": 66
         },
         {
             "pos": [
-                8,
-                3
+                553.539720351059,
+                271.70651735264966
             ],
             "id": 67
         },
         {
             "pos": [
-                8,
-                4
+                565.0407551073193,
+                328.6878793794275
             ],
             "id": 68
         },
         {
             "pos": [
-                8,
-                5
+                563.1592345712799,
+                398.5730594656326
             ],
             "id": 69
         },
         {
             "pos": [
-                8,
-                6
+                551.4208948143184,
+                467.3684188714605
             ],
             "id": 70
         },
         {
             "pos": [
-                8,
-                7
+                560.5082361166153,
+                555.0931507001484
             ],
             "id": 71
         },
         {
             "pos": [
-                9,
-                0
+                616.8623768381066,
+                60.2764237568407
             ],
             "id": 72
         },
         {
             "pos": [
-                9,
-                1
+                620.0935554274383,
+                134.07529612165993
             ],
             "id": 73
         },
         {
             "pos": [
-                9,
-                2
+                613.1592638553325,
+                191.50238672992828
             ],
             "id": 74
         },
         {
             "pos": [
-                9,
-                3
+                633.8382076981892,
+                272.2249431798058
             ],
             "id": 75
         },
         {
             "pos": [
-                9,
-                4
+                631.3841772536456,
+                329.29733425144616
             ],
             "id": 76
         },
         {
             "pos": [
-                9,
-                5
+                616.7907517633198,
+                405.66873337562856
             ],
             "id": 77
         },
         {
             "pos": [
-                9,
-                6
+                623.4723914425686,
+                482.77810752177265
             ],
             "id": 78
         },
         {
             "pos": [
-                9,
-                7
+                627.6077554495758,
+                555.1706867441602
             ],
             "id": 79
         },
         {
             "pos": [
-                10,
-                0
+                685.7762688222203,
+                44.25804614665792
             ],
             "id": 80
         },
         {
             "pos": [
-                10,
-                1
+                675.2209971059949,
+                135.21640712329386
             ],
             "id": 81
         },
         {
             "pos": [
-                10,
-                2
+                684.168726088027,
+                187.19278585668513
             ],
             "id": 82
         },
         {
             "pos": [
-                10,
-                3
+                676.4396033974103,
+                251.6971476661097
             ],
             "id": 83
         },
         {
             "pos": [
-                10,
-                4
+                681.3802028764248,
+                323.5802560577765
             ],
             "id": 84
         },
         {
             "pos": [
-                10,
-                5
+                698.4367879918962,
+                402.16549526010573
             ],
             "id": 85
         },
         {
             "pos": [
-                10,
-                6
+                682.3265056368623,
+                466.96157908055346
             ],
             "id": 86
         },
         {
             "pos": [
-                10,
-                7
+                698.700503244995,
+                556.4084164871371
             ],
             "id": 87
         },
         {
             "pos": [
-                11,
-                0
+                755.2818278139638,
+                37.29121498324689
             ],
             "id": 88
         },
         {
             "pos": [
-                11,
-                1
+                755.0844158079567,
+                134.08815714724224
             ],
             "id": 89
         },
         {
             "pos": [
-                11,
-                2
+                757.5087559320991,
+                179.9244168362581
             ],
             "id": 90
         },
         {
             "pos": [
-                11,
-                3
+                764.5273997004098,
+                263.3542759402361
             ],
             "id": 91
         },
         {
             "pos": [
-                11,
-                4
+                752.9660335752056,
+                324.18310281597905
             ],
             "id": 92
         },
         {
             "pos": [
-                11,
-                5
+                750.3997709522162,
+                401.9718081230732
             ],
             "id": 93
         },
         {
             "pos": [
-                11,
-                6
+                743.079447020793,
+                489.71435046223513
             ],
             "id": 94
         },
         {
             "pos": [
-                11,
-                7
+                737.8010818285084,
+                562.2064384703569
             ],
             "id": 95
         }
     ],
     "edges": [
         {
-            "distance": 0.85,
+            "distance": 0.59,
             "traffic": 1.0,
-            "speed_limit": 45,
-            "fuel_cost": 0.54,
+            "speed_limit": 30,
+            "fuel_cost": 0.88,
             "source": 0,
-            "target": 1
+            "target": 8
         },
         {
-            "distance": 1.02,
+            "distance": 0.38,
             "traffic": 2.5,
             "speed_limit": 30,
-            "fuel_cost": 1.37,
+            "fuel_cost": 0.32,
             "source": 1,
             "target": 9
         },
         {
-            "distance": 0.96,
-            "traffic": 1.5,
+            "distance": 0.84,
+            "traffic": 1.2,
             "speed_limit": 60,
-            "fuel_cost": 0.6,
+            "fuel_cost": 0.99,
             "source": 1,
             "target": 2
         },
         {
-            "distance": 0.86,
-            "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.79,
+            "distance": 0.61,
+            "traffic": 1.2,
+            "speed_limit": 30,
+            "fuel_cost": 0.52,
             "source": 2,
             "target": 10
         },
         {
-            "distance": 1.16,
-            "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.75,
+            "distance": 0.68,
+            "traffic": 2.5,
+            "speed_limit": 30,
+            "fuel_cost": 0.54,
             "source": 2,
             "target": 3
         },
         {
-            "distance": 1.17,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.92,
+            "distance": 0.6,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.65,
             "source": 3,
             "target": 11
         },
         {
-            "distance": 0.87,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.27,
+            "distance": 0.56,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.8,
+            "source": 3,
+            "target": 4
+        },
+        {
+            "distance": 0.51,
+            "traffic": 2.5,
+            "speed_limit": 30,
+            "fuel_cost": 0.35,
             "source": 4,
             "target": 12
         },
         {
-            "distance": 0.91,
-            "traffic": 1.5,
+            "distance": 0.69,
+            "traffic": 1.0,
             "speed_limit": 30,
-            "fuel_cost": 1.12,
+            "fuel_cost": 0.61,
+            "source": 4,
+            "target": 5
+        },
+        {
+            "distance": 0.77,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 1.06,
             "source": 5,
             "target": 6
         },
         {
-            "distance": 0.89,
-            "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.68,
+            "distance": 0.63,
+            "traffic": 1.0,
+            "speed_limit": 30,
+            "fuel_cost": 0.94,
             "source": 6,
             "target": 14
         },
         {
-            "distance": 1.05,
+            "distance": 0.64,
             "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.27,
+            "speed_limit": 45,
+            "fuel_cost": 0.9,
+            "source": 6,
+            "target": 7
+        },
+        {
+            "distance": 0.41,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.27,
             "source": 7,
             "target": 15
-        },
-        {
-            "distance": 0.99,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.44,
-            "source": 8,
-            "target": 16
-        },
-        {
-            "distance": 0.82,
-            "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.82,
-            "source": 8,
-            "target": 9
-        },
-        {
-            "distance": 1.13,
-            "traffic": 1.0,
-            "speed_limit": 60,
-            "fuel_cost": 0.71,
-            "source": 9,
-            "target": 17
-        },
-        {
-            "distance": 0.94,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 0.57,
-            "source": 9,
-            "target": 10
         },
         {
             "distance": 0.93,
             "traffic": 2.5,
             "speed_limit": 60,
-            "fuel_cost": 1.18,
-            "source": 10,
-            "target": 18
+            "fuel_cost": 0.78,
+            "source": 8,
+            "target": 16
         },
         {
-            "distance": 0.97,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.73,
-            "source": 10,
-            "target": 11
-        },
-        {
-            "distance": 0.98,
-            "traffic": 1.0,
-            "speed_limit": 45,
-            "fuel_cost": 0.63,
-            "source": 11,
-            "target": 19
-        },
-        {
-            "distance": 1.04,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 1.32,
-            "source": 11,
-            "target": 12
-        },
-        {
-            "distance": 1.09,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.24,
-            "source": 12,
-            "target": 20
-        },
-        {
-            "distance": 1.1,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 0.68,
-            "source": 12,
-            "target": 13
-        },
-        {
-            "distance": 1.12,
+            "distance": 0.55,
             "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.33,
-            "source": 13,
-            "target": 21
+            "speed_limit": 60,
+            "fuel_cost": 0.48,
+            "source": 8,
+            "target": 9
         },
         {
-            "distance": 0.85,
+            "distance": 0.78,
             "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.01,
-            "source": 15,
-            "target": 23
-        },
-        {
-            "distance": 1.0,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.14,
-            "source": 16,
-            "target": 24
-        },
-        {
-            "distance": 1.12,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.03,
-            "source": 17,
-            "target": 25
-        },
-        {
-            "distance": 1.13,
-            "traffic": 1.0,
-            "speed_limit": 45,
-            "fuel_cost": 1.62,
-            "source": 17,
-            "target": 18
-        },
-        {
-            "distance": 0.84,
-            "traffic": 1.0,
-            "speed_limit": 45,
-            "fuel_cost": 0.79,
-            "source": 18,
-            "target": 26
-        },
-        {
-            "distance": 0.84,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 0.96,
-            "source": 19,
-            "target": 27
-        },
-        {
-            "distance": 0.95,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 0.55,
-            "source": 19,
-            "target": 20
-        },
-        {
-            "distance": 1.18,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 0.8,
-            "source": 20,
-            "target": 28
-        },
-        {
-            "distance": 1.0,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.19,
-            "source": 20,
-            "target": 21
+            "speed_limit": 60,
+            "fuel_cost": 0.77,
+            "source": 9,
+            "target": 17
         },
         {
             "distance": 0.98,
             "traffic": 1.0,
             "speed_limit": 30,
             "fuel_cost": 1.21,
-            "source": 21,
-            "target": 29
+            "source": 9,
+            "target": 10
+        },
+        {
+            "distance": 0.7,
+            "traffic": 1.0,
+            "speed_limit": 45,
+            "fuel_cost": 0.99,
+            "source": 11,
+            "target": 19
+        },
+        {
+            "distance": 0.72,
+            "traffic": 2.5,
+            "speed_limit": 60,
+            "fuel_cost": 1.06,
+            "source": 11,
+            "target": 12
+        },
+        {
+            "distance": 0.74,
+            "traffic": 2.0,
+            "speed_limit": 45,
+            "fuel_cost": 1.04,
+            "source": 13,
+            "target": 21
         },
         {
             "distance": 0.84,
             "traffic": 2.5,
+            "speed_limit": 60,
+            "fuel_cost": 1.16,
+            "source": 13,
+            "target": 14
+        },
+        {
+            "distance": 0.58,
+            "traffic": 2.5,
             "speed_limit": 45,
-            "fuel_cost": 1.1,
+            "fuel_cost": 0.46,
+            "source": 14,
+            "target": 22
+        },
+        {
+            "distance": 0.51,
+            "traffic": 1.0,
+            "speed_limit": 45,
+            "fuel_cost": 0.54,
+            "source": 14,
+            "target": 15
+        },
+        {
+            "distance": 0.74,
+            "traffic": 1.0,
+            "speed_limit": 60,
+            "fuel_cost": 1.06,
+            "source": 15,
+            "target": 23
+        },
+        {
+            "distance": 0.44,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.3,
+            "source": 16,
+            "target": 24
+        },
+        {
+            "distance": 0.68,
+            "traffic": 1.5,
+            "speed_limit": 30,
+            "fuel_cost": 0.71,
+            "source": 17,
+            "target": 18
+        },
+        {
+            "distance": 0.73,
+            "traffic": 2.5,
+            "speed_limit": 45,
+            "fuel_cost": 0.83,
+            "source": 18,
+            "target": 26
+        },
+        {
+            "distance": 0.93,
+            "traffic": 1.5,
+            "speed_limit": 45,
+            "fuel_cost": 0.99,
+            "source": 18,
+            "target": 19
+        },
+        {
+            "distance": 0.6,
+            "traffic": 2.0,
+            "speed_limit": 45,
+            "fuel_cost": 0.48,
+            "source": 19,
+            "target": 27
+        },
+        {
+            "distance": 0.64,
+            "traffic": 1.0,
+            "speed_limit": 30,
+            "fuel_cost": 0.65,
+            "source": 19,
+            "target": 20
+        },
+        {
+            "distance": 0.71,
+            "traffic": 1.5,
+            "speed_limit": 45,
+            "fuel_cost": 0.84,
+            "source": 20,
+            "target": 28
+        },
+        {
+            "distance": 0.95,
+            "traffic": 2.5,
+            "speed_limit": 30,
+            "fuel_cost": 0.78,
             "source": 21,
             "target": 22
         },
         {
-            "distance": 1.18,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 1.28,
+            "distance": 0.76,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.49,
             "source": 22,
             "target": 30
         },
         {
-            "distance": 0.95,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 0.49,
+            "distance": 0.55,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.81,
             "source": 22,
             "target": 23
         },
         {
-            "distance": 0.99,
-            "traffic": 1.0,
-            "speed_limit": 60,
-            "fuel_cost": 1.45,
+            "distance": 0.72,
+            "traffic": 2.0,
+            "speed_limit": 30,
+            "fuel_cost": 0.47,
             "source": 23,
             "target": 31
         },
         {
-            "distance": 0.85,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.19,
-            "source": 24,
-            "target": 32
-        },
-        {
-            "distance": 0.95,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.36,
+            "distance": 0.52,
+            "traffic": 2.0,
+            "speed_limit": 30,
+            "fuel_cost": 0.76,
             "source": 24,
             "target": 25
         },
         {
-            "distance": 1.07,
-            "traffic": 1.0,
+            "distance": 0.61,
+            "traffic": 2.0,
             "speed_limit": 30,
-            "fuel_cost": 1.22,
+            "fuel_cost": 0.67,
             "source": 25,
             "target": 33
         },
         {
-            "distance": 0.84,
+            "distance": 0.74,
             "traffic": 1.5,
             "speed_limit": 45,
-            "fuel_cost": 0.48,
+            "fuel_cost": 0.47,
             "source": 25,
             "target": 26
         },
         {
-            "distance": 1.08,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.72,
+            "distance": 0.66,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.53,
             "source": 26,
             "target": 34
         },
         {
-            "distance": 0.97,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.06,
+            "distance": 0.87,
+            "traffic": 2.0,
+            "speed_limit": 45,
+            "fuel_cost": 1.28,
             "source": 26,
             "target": 27
         },
         {
-            "distance": 0.85,
-            "traffic": 2.5,
+            "distance": 0.69,
+            "traffic": 1.5,
             "speed_limit": 60,
-            "fuel_cost": 0.49,
+            "fuel_cost": 1.03,
             "source": 27,
             "target": 35
         },
         {
-            "distance": 1.1,
-            "traffic": 2.5,
+            "distance": 0.62,
+            "traffic": 1.0,
             "speed_limit": 30,
-            "fuel_cost": 1.09,
+            "fuel_cost": 0.38,
             "source": 27,
             "target": 28
         },
         {
-            "distance": 1.09,
+            "distance": 0.63,
             "traffic": 1.5,
-            "speed_limit": 30,
-            "fuel_cost": 0.55,
-            "source": 28,
-            "target": 36
-        },
-        {
-            "distance": 1.09,
-            "traffic": 1.0,
             "speed_limit": 45,
-            "fuel_cost": 0.89,
+            "fuel_cost": 0.58,
             "source": 28,
             "target": 29
         },
         {
-            "distance": 1.02,
+            "distance": 0.67,
+            "traffic": 1.5,
+            "speed_limit": 45,
+            "fuel_cost": 0.45,
+            "source": 29,
+            "target": 37
+        },
+        {
+            "distance": 0.47,
             "traffic": 1.0,
-            "speed_limit": 60,
-            "fuel_cost": 0.71,
+            "speed_limit": 30,
+            "fuel_cost": 0.36,
             "source": 30,
             "target": 38
         },
         {
-            "distance": 1.09,
-            "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.78,
+            "distance": 0.91,
+            "traffic": 1.0,
+            "speed_limit": 30,
+            "fuel_cost": 1.24,
             "source": 30,
             "target": 31
         },
         {
-            "distance": 0.87,
-            "traffic": 1.0,
+            "distance": 0.69,
+            "traffic": 1.2,
             "speed_limit": 60,
-            "fuel_cost": 0.69,
+            "fuel_cost": 1.03,
+            "source": 31,
+            "target": 39
+        },
+        {
+            "distance": 0.79,
+            "traffic": 2.0,
+            "speed_limit": 30,
+            "fuel_cost": 0.68,
             "source": 32,
             "target": 40
         },
         {
-            "distance": 1.11,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.32,
-            "source": 32,
-            "target": 33
-        },
-        {
-            "distance": 0.88,
+            "distance": 0.78,
             "traffic": 1.0,
-            "speed_limit": 45,
-            "fuel_cost": 1.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.68,
             "source": 33,
             "target": 41
         },
         {
-            "distance": 0.82,
-            "traffic": 1.0,
+            "distance": 0.61,
+            "traffic": 2.0,
             "speed_limit": 45,
             "fuel_cost": 0.84,
             "source": 33,
             "target": 34
         },
         {
-            "distance": 0.85,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 1.19,
+            "distance": 0.66,
+            "traffic": 2.0,
+            "speed_limit": 45,
+            "fuel_cost": 0.7,
             "source": 34,
             "target": 42
         },
         {
-            "distance": 1.13,
-            "traffic": 1.5,
+            "distance": 0.73,
+            "traffic": 2.5,
             "speed_limit": 30,
-            "fuel_cost": 0.97,
+            "fuel_cost": 0.64,
             "source": 34,
             "target": 35
         },
         {
-            "distance": 0.96,
-            "traffic": 1.5,
+            "distance": 0.74,
+            "traffic": 1.2,
             "speed_limit": 45,
-            "fuel_cost": 0.74,
+            "fuel_cost": 0.76,
             "source": 35,
             "target": 43
         },
         {
-            "distance": 1.15,
-            "traffic": 2.5,
+            "distance": 0.64,
+            "traffic": 1.2,
             "speed_limit": 60,
-            "fuel_cost": 1.22,
+            "fuel_cost": 0.72,
             "source": 35,
             "target": 36
         },
         {
-            "distance": 0.86,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.19,
+            "distance": 0.71,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.42,
             "source": 36,
             "target": 44
         },
         {
             "distance": 0.96,
-            "traffic": 1.0,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 1.25,
+            "source": 36,
+            "target": 37
+        },
+        {
+            "distance": 0.65,
+            "traffic": 1.2,
             "speed_limit": 45,
-            "fuel_cost": 1.21,
+            "fuel_cost": 0.35,
             "source": 37,
             "target": 45
         },
         {
-            "distance": 0.91,
-            "traffic": 2.5,
+            "distance": 0.79,
+            "traffic": 1.2,
             "speed_limit": 45,
-            "fuel_cost": 1.17,
-            "source": 37,
-            "target": 38
+            "fuel_cost": 1.09,
+            "source": 38,
+            "target": 46
         },
         {
-            "distance": 0.85,
-            "traffic": 2.5,
+            "distance": 0.84,
+            "traffic": 2.0,
             "speed_limit": 30,
-            "fuel_cost": 1.2,
+            "fuel_cost": 1.01,
             "source": 38,
             "target": 39
         },
         {
-            "distance": 0.86,
+            "distance": 0.59,
             "traffic": 1.0,
             "speed_limit": 45,
-            "fuel_cost": 0.59,
+            "fuel_cost": 0.67,
             "source": 39,
             "target": 47
         },
         {
-            "distance": 0.99,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.41,
+            "distance": 0.64,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.66,
             "source": 40,
             "target": 48
         },
         {
-            "distance": 0.85,
-            "traffic": 1.0,
+            "distance": 0.58,
+            "traffic": 2.5,
             "speed_limit": 45,
-            "fuel_cost": 0.95,
+            "fuel_cost": 0.58,
             "source": 40,
             "target": 41
         },
         {
-            "distance": 0.94,
-            "traffic": 2.5,
-            "speed_limit": 60,
-            "fuel_cost": 1.34,
+            "distance": 0.44,
+            "traffic": 1.5,
+            "speed_limit": 45,
+            "fuel_cost": 0.38,
             "source": 41,
             "target": 49
         },
         {
-            "distance": 0.94,
-            "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 1.32,
+            "distance": 0.62,
+            "traffic": 1.2,
+            "speed_limit": 45,
+            "fuel_cost": 0.42,
             "source": 41,
             "target": 42
         },
         {
-            "distance": 1.0,
-            "traffic": 1.0,
+            "distance": 0.73,
+            "traffic": 2.5,
             "speed_limit": 60,
-            "fuel_cost": 1.21,
+            "fuel_cost": 0.47,
             "source": 42,
             "target": 50
         },
         {
-            "distance": 0.84,
-            "traffic": 1.0,
-            "speed_limit": 45,
-            "fuel_cost": 0.5,
+            "distance": 0.75,
+            "traffic": 1.5,
+            "speed_limit": 60,
+            "fuel_cost": 1.08,
             "source": 42,
             "target": 43
         },
         {
-            "distance": 1.2,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.42,
-            "source": 43,
-            "target": 51
-        },
-        {
-            "distance": 1.08,
+            "distance": 0.91,
             "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.92,
+            "speed_limit": 60,
+            "fuel_cost": 0.77,
             "source": 43,
             "target": 44
         },
         {
-            "distance": 0.8,
-            "traffic": 1.5,
+            "distance": 0.44,
+            "traffic": 2.0,
             "speed_limit": 45,
-            "fuel_cost": 0.5,
+            "fuel_cost": 0.27,
             "source": 44,
             "target": 52
         },
         {
-            "distance": 0.8,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.98,
+            "distance": 0.68,
+            "traffic": 1.0,
+            "speed_limit": 30,
+            "fuel_cost": 0.5,
             "source": 44,
             "target": 45
         },
         {
-            "distance": 1.0,
-            "traffic": 2.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.57,
+            "distance": 0.53,
+            "traffic": 1.2,
+            "speed_limit": 45,
+            "fuel_cost": 0.63,
             "source": 45,
             "target": 53
         },
         {
-            "distance": 1.01,
-            "traffic": 1.5,
+            "distance": 0.7,
+            "traffic": 2.5,
             "speed_limit": 30,
-            "fuel_cost": 0.7,
+            "fuel_cost": 0.67,
             "source": 45,
             "target": 46
         },
         {
-            "distance": 0.93,
-            "traffic": 1.0,
+            "distance": 0.79,
+            "traffic": 2.0,
             "speed_limit": 45,
-            "fuel_cost": 0.7,
+            "fuel_cost": 1.06,
             "source": 46,
             "target": 54
         },
         {
-            "distance": 0.94,
+            "distance": 0.7,
             "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.18,
+            "speed_limit": 45,
+            "fuel_cost": 0.52,
             "source": 46,
             "target": 47
         },
         {
-            "distance": 1.06,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 1.33,
+            "distance": 0.67,
+            "traffic": 1.5,
+            "speed_limit": 45,
+            "fuel_cost": 0.51,
             "source": 48,
             "target": 56
         },
         {
-            "distance": 0.92,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.22,
+            "distance": 0.75,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.8,
             "source": 48,
             "target": 49
         },
         {
-            "distance": 1.09,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.33,
-            "source": 49,
-            "target": 57
-        },
-        {
-            "distance": 1.12,
-            "traffic": 1.5,
+            "distance": 0.72,
+            "traffic": 1.2,
             "speed_limit": 60,
-            "fuel_cost": 0.59,
+            "fuel_cost": 0.81,
             "source": 49,
             "target": 50
         },
         {
-            "distance": 1.17,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 1.13,
-            "source": 50,
-            "target": 51
-        },
-        {
-            "distance": 0.86,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.23,
+            "distance": 0.65,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.41,
             "source": 51,
             "target": 59
         },
         {
-            "distance": 1.04,
+            "distance": 0.53,
             "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.26,
+            "speed_limit": 30,
+            "fuel_cost": 0.62,
             "source": 51,
             "target": 52
         },
         {
-            "distance": 0.93,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.15,
-            "source": 52,
-            "target": 60
-        },
-        {
-            "distance": 1.01,
-            "traffic": 2.5,
+            "distance": 0.72,
+            "traffic": 1.2,
             "speed_limit": 30,
-            "fuel_cost": 0.72,
+            "fuel_cost": 0.89,
             "source": 52,
             "target": 53
         },
         {
-            "distance": 0.89,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.57,
+            "distance": 0.8,
+            "traffic": 1.0,
+            "speed_limit": 30,
+            "fuel_cost": 0.73,
             "source": 53,
             "target": 61
         },
         {
-            "distance": 0.95,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 0.48,
-            "source": 53,
-            "target": 54
-        },
-        {
-            "distance": 1.02,
-            "traffic": 1.5,
-            "speed_limit": 30,
-            "fuel_cost": 0.78,
+            "distance": 0.61,
+            "traffic": 1.2,
+            "speed_limit": 45,
+            "fuel_cost": 0.33,
             "source": 54,
             "target": 62
         },
         {
-            "distance": 1.19,
+            "distance": 0.78,
             "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.67,
+            "speed_limit": 30,
+            "fuel_cost": 0.81,
             "source": 54,
             "target": 55
         },
         {
-            "distance": 1.12,
-            "traffic": 2.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.58,
-            "source": 55,
-            "target": 63
-        },
-        {
-            "distance": 1.12,
+            "distance": 0.6,
             "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.61,
+            "speed_limit": 30,
+            "fuel_cost": 0.32,
             "source": 56,
             "target": 64
         },
         {
-            "distance": 1.07,
+            "distance": 0.84,
             "traffic": 1.0,
-            "speed_limit": 60,
-            "fuel_cost": 0.61,
-            "source": 57,
-            "target": 65
+            "speed_limit": 30,
+            "fuel_cost": 0.7,
+            "source": 56,
+            "target": 57
         },
         {
-            "distance": 1.11,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.06,
+            "distance": 0.59,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.51,
             "source": 57,
             "target": 58
         },
         {
-            "distance": 1.15,
-            "traffic": 1.0,
+            "distance": 0.88,
+            "traffic": 2.0,
             "speed_limit": 30,
-            "fuel_cost": 0.63,
+            "fuel_cost": 0.74,
             "source": 58,
             "target": 66
         },
         {
-            "distance": 0.96,
-            "traffic": 2.5,
-            "speed_limit": 60,
-            "fuel_cost": 1.36,
-            "source": 58,
-            "target": 59
-        },
-        {
-            "distance": 1.17,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.64,
+            "distance": 0.51,
+            "traffic": 1.0,
+            "speed_limit": 30,
+            "fuel_cost": 0.33,
             "source": 59,
             "target": 67
         },
         {
-            "distance": 0.91,
+            "distance": 0.72,
             "traffic": 2.5,
             "speed_limit": 45,
-            "fuel_cost": 0.62,
+            "fuel_cost": 0.9,
             "source": 59,
             "target": 60
         },
         {
-            "distance": 1.07,
-            "traffic": 1.0,
-            "speed_limit": 45,
-            "fuel_cost": 1.37,
+            "distance": 0.84,
+            "traffic": 2.5,
+            "speed_limit": 60,
+            "fuel_cost": 0.74,
             "source": 60,
             "target": 68
         },
         {
-            "distance": 0.88,
-            "traffic": 2.5,
-            "speed_limit": 60,
-            "fuel_cost": 1.21,
-            "source": 60,
-            "target": 61
-        },
-        {
-            "distance": 0.94,
-            "traffic": 2.5,
+            "distance": 0.59,
+            "traffic": 1.0,
             "speed_limit": 30,
-            "fuel_cost": 1.31,
+            "fuel_cost": 0.77,
             "source": 61,
             "target": 69
         },
         {
-            "distance": 0.81,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.14,
+            "distance": 0.82,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.8,
             "source": 61,
             "target": 62
         },
         {
-            "distance": 0.9,
-            "traffic": 1.0,
+            "distance": 0.52,
+            "traffic": 1.5,
             "speed_limit": 60,
-            "fuel_cost": 0.95,
+            "fuel_cost": 0.64,
             "source": 62,
             "target": 70
         },
         {
-            "distance": 0.95,
-            "traffic": 1.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.16,
+            "distance": 0.43,
+            "traffic": 1.2,
+            "speed_limit": 45,
+            "fuel_cost": 0.5,
             "source": 62,
             "target": 63
         },
         {
-            "distance": 0.89,
-            "traffic": 1.0,
-            "speed_limit": 60,
-            "fuel_cost": 0.95,
+            "distance": 0.63,
+            "traffic": 1.5,
+            "speed_limit": 45,
+            "fuel_cost": 0.68,
             "source": 63,
             "target": 71
         },
         {
-            "distance": 1.08,
+            "distance": 0.57,
             "traffic": 1.0,
             "speed_limit": 30,
-            "fuel_cost": 1.62,
+            "fuel_cost": 0.57,
             "source": 64,
             "target": 72
         },
         {
-            "distance": 1.02,
-            "traffic": 1.5,
+            "distance": 0.64,
+            "traffic": 1.0,
             "speed_limit": 30,
-            "fuel_cost": 1.28,
-            "source": 64,
-            "target": 65
-        },
-        {
-            "distance": 1.01,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.7,
+            "fuel_cost": 0.86,
             "source": 65,
             "target": 73
         },
         {
-            "distance": 0.88,
-            "traffic": 1.0,
-            "speed_limit": 45,
-            "fuel_cost": 0.48,
+            "distance": 0.79,
+            "traffic": 1.5,
+            "speed_limit": 30,
+            "fuel_cost": 1.17,
             "source": 65,
             "target": 66
         },
         {
-            "distance": 0.89,
-            "traffic": 2.5,
-            "speed_limit": 30,
+            "distance": 0.4,
+            "traffic": 2.0,
+            "speed_limit": 60,
             "fuel_cost": 0.57,
             "source": 66,
             "target": 74
-        },
-        {
-            "distance": 1.14,
-            "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 1.48,
-            "source": 66,
-            "target": 67
-        },
-        {
-            "distance": 0.82,
-            "traffic": 2.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.62,
-            "source": 67,
-            "target": 75
-        },
-        {
-            "distance": 0.91,
-            "traffic": 2.5,
-            "speed_limit": 60,
-            "fuel_cost": 1.05,
-            "source": 67,
-            "target": 68
-        },
-        {
-            "distance": 1.18,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.92,
-            "source": 68,
-            "target": 76
-        },
-        {
-            "distance": 1.15,
-            "traffic": 1.5,
-            "speed_limit": 30,
-            "fuel_cost": 0.9,
-            "source": 68,
-            "target": 69
-        },
-        {
-            "distance": 0.95,
-            "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.8,
-            "source": 69,
-            "target": 77
-        },
-        {
-            "distance": 0.9,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.25,
-            "source": 69,
-            "target": 70
-        },
-        {
-            "distance": 0.86,
-            "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.95,
-            "source": 70,
-            "target": 78
-        },
-        {
-            "distance": 1.13,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.48,
-            "source": 70,
-            "target": 71
-        },
-        {
-            "distance": 1.09,
-            "traffic": 1.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.74,
-            "source": 71,
-            "target": 79
-        },
-        {
-            "distance": 1.11,
-            "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.39,
-            "source": 72,
-            "target": 80
-        },
-        {
-            "distance": 1.13,
-            "traffic": 1.0,
-            "speed_limit": 60,
-            "fuel_cost": 1.08,
-            "source": 73,
-            "target": 74
-        },
-        {
-            "distance": 1.02,
-            "traffic": 1.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.23,
-            "source": 74,
-            "target": 82
-        },
-        {
-            "distance": 1.12,
-            "traffic": 1.0,
-            "speed_limit": 60,
-            "fuel_cost": 1.51,
-            "source": 74,
-            "target": 75
-        },
-        {
-            "distance": 0.98,
-            "traffic": 1.0,
-            "speed_limit": 60,
-            "fuel_cost": 0.84,
-            "source": 75,
-            "target": 83
-        },
-        {
-            "distance": 0.89,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.27,
-            "source": 75,
-            "target": 76
-        },
-        {
-            "distance": 0.96,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.11,
-            "source": 76,
-            "target": 84
-        },
-        {
-            "distance": 1.12,
-            "traffic": 2.5,
-            "speed_limit": 60,
-            "fuel_cost": 1.24,
-            "source": 76,
-            "target": 77
-        },
-        {
-            "distance": 0.89,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 1.02,
-            "source": 77,
-            "target": 78
-        },
-        {
-            "distance": 1.14,
-            "traffic": 2.5,
-            "speed_limit": 60,
-            "fuel_cost": 0.69,
-            "source": 78,
-            "target": 86
-        },
-        {
-            "distance": 1.19,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 0.77,
-            "source": 78,
-            "target": 79
-        },
-        {
-            "distance": 1.07,
-            "traffic": 1.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.58,
-            "source": 79,
-            "target": 87
-        },
-        {
-            "distance": 1.12,
-            "traffic": 1.0,
-            "speed_limit": 45,
-            "fuel_cost": 1.24,
-            "source": 80,
-            "target": 88
-        },
-        {
-            "distance": 1.06,
-            "traffic": 1.0,
-            "speed_limit": 60,
-            "fuel_cost": 0.88,
-            "source": 80,
-            "target": 81
-        },
-        {
-            "distance": 1.14,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 1.0,
-            "source": 81,
-            "target": 82
-        },
-        {
-            "distance": 1.13,
-            "traffic": 1.0,
-            "speed_limit": 30,
-            "fuel_cost": 0.88,
-            "source": 82,
-            "target": 90
-        },
-        {
-            "distance": 0.94,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.65,
-            "source": 83,
-            "target": 91
         },
         {
             "distance": 0.85,
             "traffic": 1.0,
             "speed_limit": 60,
-            "fuel_cost": 0.8,
-            "source": 83,
-            "target": 84
+            "fuel_cost": 0.85,
+            "source": 66,
+            "target": 67
         },
         {
-            "distance": 0.81,
-            "traffic": 2.5,
-            "speed_limit": 45,
-            "fuel_cost": 0.42,
-            "source": 84,
-            "target": 92
-        },
-        {
-            "distance": 1.13,
+            "distance": 0.8,
             "traffic": 1.0,
             "speed_limit": 45,
-            "fuel_cost": 0.89,
-            "source": 85,
-            "target": 93
+            "fuel_cost": 0.99,
+            "source": 67,
+            "target": 75
         },
         {
-            "distance": 1.12,
-            "traffic": 2.5,
+            "distance": 0.58,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.66,
+            "source": 67,
+            "target": 68
+        },
+        {
+            "distance": 0.66,
+            "traffic": 1.2,
+            "speed_limit": 30,
+            "fuel_cost": 0.8,
+            "source": 68,
+            "target": 76
+        },
+        {
+            "distance": 0.7,
+            "traffic": 1.2,
+            "speed_limit": 30,
+            "fuel_cost": 0.74,
+            "source": 68,
+            "target": 69
+        },
+        {
+            "distance": 0.74,
+            "traffic": 1.5,
             "speed_limit": 45,
-            "fuel_cost": 0.91,
-            "source": 85,
-            "target": 86
+            "fuel_cost": 1.04,
+            "source": 70,
+            "target": 78
         },
         {
             "distance": 0.88,
             "traffic": 1.5,
             "speed_limit": 30,
             "fuel_cost": 0.8,
+            "source": 70,
+            "target": 71
+        },
+        {
+            "distance": 0.67,
+            "traffic": 1.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.79,
+            "source": 71,
+            "target": 79
+        },
+        {
+            "distance": 0.71,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.88,
+            "source": 72,
+            "target": 80
+        },
+        {
+            "distance": 0.74,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.39,
+            "source": 72,
+            "target": 73
+        },
+        {
+            "distance": 0.55,
+            "traffic": 1.5,
+            "speed_limit": 30,
+            "fuel_cost": 0.77,
+            "source": 73,
+            "target": 81
+        },
+        {
+            "distance": 0.83,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 1.0,
+            "source": 74,
+            "target": 75
+        },
+        {
+            "distance": 0.47,
+            "traffic": 2.0,
+            "speed_limit": 45,
+            "fuel_cost": 0.68,
+            "source": 75,
+            "target": 83
+        },
+        {
+            "distance": 0.5,
+            "traffic": 2.5,
+            "speed_limit": 30,
+            "fuel_cost": 0.51,
+            "source": 76,
+            "target": 84
+        },
+        {
+            "distance": 0.78,
+            "traffic": 2.0,
+            "speed_limit": 30,
+            "fuel_cost": 1.06,
+            "source": 76,
+            "target": 77
+        },
+        {
+            "distance": 0.82,
+            "traffic": 1.0,
+            "speed_limit": 45,
+            "fuel_cost": 0.73,
+            "source": 77,
+            "target": 85
+        },
+        {
+            "distance": 0.77,
+            "traffic": 1.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.46,
+            "source": 77,
+            "target": 78
+        },
+        {
+            "distance": 0.61,
+            "traffic": 1.5,
+            "speed_limit": 30,
+            "fuel_cost": 0.39,
+            "source": 78,
+            "target": 86
+        },
+        {
+            "distance": 0.73,
+            "traffic": 2.5,
+            "speed_limit": 60,
+            "fuel_cost": 0.68,
+            "source": 78,
+            "target": 79
+        },
+        {
+            "distance": 0.71,
+            "traffic": 1.2,
+            "speed_limit": 30,
+            "fuel_cost": 0.44,
+            "source": 79,
+            "target": 87
+        },
+        {
+            "distance": 0.7,
+            "traffic": 1.5,
+            "speed_limit": 60,
+            "fuel_cost": 0.81,
+            "source": 80,
+            "target": 88
+        },
+        {
+            "distance": 0.92,
+            "traffic": 2.0,
+            "speed_limit": 45,
+            "fuel_cost": 1.3,
+            "source": 80,
+            "target": 81
+        },
+        {
+            "distance": 0.8,
+            "traffic": 2.5,
+            "speed_limit": 45,
+            "fuel_cost": 0.61,
+            "source": 81,
+            "target": 89
+        },
+        {
+            "distance": 0.53,
+            "traffic": 2.5,
+            "speed_limit": 60,
+            "fuel_cost": 0.72,
+            "source": 81,
+            "target": 82
+        },
+        {
+            "distance": 0.74,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.57,
+            "source": 82,
+            "target": 90
+        },
+        {
+            "distance": 0.65,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.92,
+            "source": 82,
+            "target": 83
+        },
+        {
+            "distance": 0.89,
+            "traffic": 2.0,
+            "speed_limit": 45,
+            "fuel_cost": 0.92,
+            "source": 83,
+            "target": 91
+        },
+        {
+            "distance": 0.72,
+            "traffic": 2.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.84,
+            "source": 84,
+            "target": 92
+        },
+        {
+            "distance": 0.8,
+            "traffic": 1.2,
+            "speed_limit": 45,
+            "fuel_cost": 0.53,
+            "source": 84,
+            "target": 85
+        },
+        {
+            "distance": 0.52,
+            "traffic": 1.5,
+            "speed_limit": 60,
+            "fuel_cost": 0.62,
+            "source": 85,
+            "target": 93
+        },
+        {
+            "distance": 0.67,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.49,
+            "source": 85,
+            "target": 86
+        },
+        {
+            "distance": 0.65,
+            "traffic": 1.2,
+            "speed_limit": 60,
+            "fuel_cost": 0.83,
             "source": 86,
             "target": 94
         },
         {
-            "distance": 1.04,
-            "traffic": 2.5,
-            "speed_limit": 60,
-            "fuel_cost": 1.44,
+            "distance": 0.91,
+            "traffic": 1.0,
+            "speed_limit": 30,
+            "fuel_cost": 1.2,
             "source": 86,
             "target": 87
         },
         {
-            "distance": 0.87,
-            "traffic": 2.5,
+            "distance": 0.4,
+            "traffic": 1.0,
             "speed_limit": 60,
-            "fuel_cost": 0.85,
+            "fuel_cost": 0.26,
             "source": 87,
             "target": 95
         },
         {
-            "distance": 1.06,
-            "traffic": 2.5,
+            "distance": 0.97,
+            "traffic": 1.5,
             "speed_limit": 30,
-            "fuel_cost": 0.87,
+            "fuel_cost": 1.35,
+            "source": 88,
+            "target": 89
+        },
+        {
+            "distance": 0.46,
+            "traffic": 1.0,
+            "speed_limit": 60,
+            "fuel_cost": 0.43,
             "source": 89,
             "target": 90
         },
         {
-            "distance": 1.16,
+            "distance": 0.62,
             "traffic": 2.5,
-            "speed_limit": 30,
-            "fuel_cost": 1.6,
-            "source": 90,
-            "target": 91
-        },
-        {
-            "distance": 0.86,
-            "traffic": 1.0,
             "speed_limit": 45,
-            "fuel_cost": 0.9,
+            "fuel_cost": 0.87,
             "source": 91,
             "target": 92
         },
         {
-            "distance": 0.87,
-            "traffic": 1.0,
-            "speed_limit": 45,
-            "fuel_cost": 0.75,
+            "distance": 0.78,
+            "traffic": 1.5,
+            "speed_limit": 30,
+            "fuel_cost": 1.14,
             "source": 92,
             "target": 93
         },
         {
-            "distance": 0.92,
-            "traffic": 1.0,
+            "distance": 0.88,
+            "traffic": 2.5,
             "speed_limit": 60,
-            "fuel_cost": 1.16,
+            "fuel_cost": 0.53,
             "source": 93,
             "target": 94
         },
         {
-            "distance": 0.81,
-            "traffic": 1.0,
+            "distance": 0.73,
+            "traffic": 2.5,
             "speed_limit": 60,
-            "fuel_cost": 0.72,
+            "fuel_cost": 0.95,
             "source": 94,
             "target": 95
         }
